@@ -22,7 +22,7 @@ const ipIsp = document.querySelector(".ip-isp");
  *
  * @param {*} mapToken Token for map box
  */
-const drawMap = (mapToken, latitude, longitude, zoomLevel) => {
+const drawMap = (mapToken) => {
   mapboxgl.accessToken = mapToken;
   map = new mapboxgl.Map({
     container: "map",
@@ -71,7 +71,7 @@ const fetchIPDetails = async (ipAddress) => {
 
 /***************  Actual logic happens here   **************************/
 
-drawMap(TOKEN, 30.94785, 76.80675, 8);
+drawMap(TOKEN);
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const ipAddress = ipAddressInput.value;
