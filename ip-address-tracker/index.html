@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External links -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <section class="main">
+      <img class="banner-img" src="./images/pattern-bg.png" alt="BANNER_IMG" />
+      <div class="search-bar">
+        <h1 class="header">IP Address Tracker</h1>
+        <form class="search-form">
+          <input placeholder="Enter IP Address" type="text" class="ip-input" />
+          <button class="submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
+        <path
+        fill-rule="evenodd"
+        d="M39.263 7.673c8.897 8.812 8.966 23.168.153 32.065l-.153.153L23 56 6.737 39.89C-2.16 31.079-2.23 16.723 6.584 7.826l.153-.152c9.007-8.922 23.52-8.922 32.526 0zM23 14.435c-5.211 0-9.436 4.185-9.436 9.347S17.79 33.128 23 33.128s9.436-4.184 9.436-9.346S28.21 14.435 23 14.435z"
+        />
+      </svg> -->
+    </section>
+    <section class="details-card">
+      <div class="card">
+        <div>
+          <p class="details-title">IP ADDRESS</p>
+          <p class="details-heading ip">-</p>
+        </div>
+        <hr />
+        <div>
+          <p class="details-title">LOCATION</p>
+          <p class="details-heading ip-location">-</p>
+        </div>
+        <hr />
+        <div>
+          <p class="details-title">TIMEZONE</p>
+          <p class="details-heading ip-timezone">-</p>
+        </div>
+        <hr />
+        <div>
+          <p class="details-title">ISP</p>
+          <p class="details-heading ip-isp">-</p>
+        </div>
+      </div>
+    </section>
+    <section class="map-area">
+      <div id="map">
+        <!-- <img class="map-img" src="./images/map.jpeg" alt="MAP_IMG" />
+        <svg
+          class="marker"
+          xmlns="http://www.w3.org/2000/svg"
+          width="46"
+          height="56"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M39.263 7.673c8.897 8.812 8.966 23.168.153 32.065l-.153.153L23 56 6.737 39.89C-2.16 31.079-2.23 16.723 6.584 7.826l.153-.152c9.007-8.922 23.52-8.922 32.526 0zM23 14.435c-5.211 0-9.436 4.185-9.436 9.347S17.79 33.128 23 33.128s9.436-4.184 9.436-9.346S28.21 14.435 23 14.435z"
+          />
+        </svg> -->
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
