@@ -127,7 +127,19 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .details-card {
-    flex-direction: row;
+  .card {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 2rem;
+  }
+
+  .details-title {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  hr {
+    display: none;
   }
 }
